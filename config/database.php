@@ -54,7 +54,7 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => '31.220.20.83',
+            'host'      => 'mysql.idhostinger.com',
             'database'  => 'u580610600_main',
             'username'  => 'u580610600_fluck',
             'password'  => 'EHJXO9tIJc',
