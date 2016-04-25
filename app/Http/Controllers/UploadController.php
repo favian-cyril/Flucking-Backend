@@ -18,7 +18,7 @@ class UploadController extends Controller
         return Redirect::to('upload')->withInput()->withErrors($validator);
       } else {
          if (Request::file('fileToUpload')->isValid()) {
-           $destinationPath = public_path('public/asset'); // upload path
+           $destinationPath = url('public/asset'); // upload path
            $extension = Request::file('fileToUpload')->getClientOriginalExtension();
            $user = Auth::user();
            $filename = $user->id . '.' . $extension;
