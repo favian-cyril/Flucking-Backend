@@ -73,7 +73,7 @@
 				</div>
 
 		<div class = "row">
-			<input type="image" src="{{url('public/img/flucking.png')}}" alt="Submit">
+			<input type="image" src="{{url('public/img/FLUCKING.png')}}" alt="Submit">
 			</form> <!-- Form End -->
 		</div>
     </div>
