@@ -57,7 +57,7 @@ return [
             'host'      => '31.220.20.83',
             'database'  => 'u580610600_main',
             'username'  => 'u580610600_fluck',
-            'password'  => 'passwordku',
+            'password'  => 'EHJXO9tIJc',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
