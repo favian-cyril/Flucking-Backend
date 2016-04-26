@@ -12,7 +12,8 @@
 Route::group(['middleware' => 'web'], function () {
     Route::get('login', 'Auth\AuthController@getLogin');
     Route::post('login', 'Auth\AuthController@postLogin');
-    Route::get('logout', 'Auth\AuthController@getLogout');
+    Route::get('logout', 'Auth\AuthController@logout');
+    Route::post('register', 'Auth\AuthController@postRegister');
     Route::get('/',[
     'middleware' => 'auth',
     'uses' => 'HomeController@index']);
