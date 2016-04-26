@@ -90,7 +90,7 @@
               </svg>
             </a>
           </li>
-	        <li><a href="#"><img src="{{url('img/message_logo.png')}}" style = "width:20px; height:20px; "></a></li>
+	        <li><a href="#"><img src="{{url('public/img/message_logo.png')}}" style = "width:20px; height:20px; "></a></li>
 	        <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <img src="{{url('public/img/settings_logo.png')}}" style = "width:20px; height:20px; ">
