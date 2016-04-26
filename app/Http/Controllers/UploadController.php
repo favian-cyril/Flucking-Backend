@@ -18,12 +18,11 @@ class UploadController extends Controller
         return Redirect::to('upload')->withInput()->withErrors($validator);
       } else {
          if (Request::file('fileToUpload')->isValid()) {
-           $destinationPath = public_path('public/asset'); // upload path
            $extension = Request::file('fileToUpload')->getClientOriginalExtension();
            $user = Auth::user();
            $filename = $user->id . '.' . $extension;
            DB::table('users')->where('id', $user->id)->update(['profilepict' => 'public/asset/' . $filename]);
-           Request::file('fileToUpload')->move($destinationPath, $filename);
+           Request::file('fileToUpload')->move(public_path().'/asset', $filename);
            Session::flash('success', 'Upload successfully');
            return Redirect::to('upload');
          } else {
