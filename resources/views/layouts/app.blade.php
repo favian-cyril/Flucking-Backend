@@ -42,7 +42,7 @@
 	            <input type="text" class="form-control" placeholder="Search movie or genre" name="s" />
               <input type="hidden" name="p" value="1"/>
 	            <span class="input-group-btn" >
-	                <button class="btn btn-default" type="button" role="Submit"><i class="fa fa-search"></i></button>
+	                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
 	            </span>
 	        </div>
 	      </form>
