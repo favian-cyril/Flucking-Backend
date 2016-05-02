@@ -1,6 +1,71 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+  .padding{
+    padding: 10px 10px 10px 10px;
+  }
+
+  .margin{
+    margin: 10em 10em 10em 10em;
+  }
+  .row-margin {
+    margin-top: 10em;
+    margin-bottom: 20em;
+  }
+  body{
+    padding: 0 0 0 0;
+  }
+  p{
+    display: inline;
+    font-family: 'pixelar';
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .comingsoon {
+    background: url("img/comingsoon.png") no-repeat;
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  html,body,.container{
+      height:100%;
+  }
+
+  .container{
+      display:table;
+      width: 100%;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid black;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+  }
+  .row
+  {
+      height: 100%;
+      min-height: 100% !important;
+      display: table-row;
+  }
+  .col-md-6.no-float{
+    display: table-cell;
+      width: 50%;
+      padding: 0 0 0 0;
+      float: none; /* thanks baxabbit */
+  }
+  img.no-resize {
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 100px;
+    max-width:100px;
+  }
+  .brown-box{
+    padding: 10% 15px 15px 20px;
+    background:  url('img/genresbackground.png');
+  }
+</style>
 <!-- Body Container -->
 <div class="container">
     <div class="row">
