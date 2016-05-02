@@ -24,7 +24,7 @@
     font-weight: bold;
   }
   .comingsoon {
-    background: url("img/comingsoon.png") no-repeat;
+    background: url("public/img/comingsoon.png") no-repeat;
     background-size: 100%;
     min-width: 100%;
     min-height: 100%;
@@ -63,7 +63,7 @@
   }
   .brown-box{
     padding: 10% 15px 15px 20px;
-    background:  url('img/genresbackground.png');
+    background:  url('public/img/genresbackground.png');
   }
 </style>
 <!-- Body Container -->
