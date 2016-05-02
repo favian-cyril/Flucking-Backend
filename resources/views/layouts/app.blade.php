@@ -41,8 +41,8 @@
 	        <div class="input-group">
 	            <input type="text" class="form-control" placeholder="Search movie or genre" name="s" />
               <input type="hidden" name="p" value="1"/>
-	            <span class="input-group-addon" role="Submit">
-	                <i class="fa fa-search"></i>
+	            <span class="input-group-btn" role="Submit">
+	                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 	            </span>
 	        </div>
 	      </form>
