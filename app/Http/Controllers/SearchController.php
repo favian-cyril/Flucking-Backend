@@ -25,16 +25,18 @@ class SearchController extends Controller
     {
       $apikey = '48629de65bd1b802324e781a5efe3a46';
       $id = $request->input('id');
-      $info = json_decode(file_get_contents('http://api.themoviedb.org/3/movie/' . $id . '?api_key=' . $apikey),true);
-      $cast = json_decode(file_get_contents('http://api.themoviedb.org/3/movie/' . $id . '/credits?api_key=' . $apikey),true);
-      $trailer = json_decode(file_get_contents('http://api.themoviedb.org/3/movie/'. $id . '/videos?api_key=' . $apikey),true)['results'];
+      $base = 'http://api.themoviedb.org/3/movie/' . $id;
+      $info = json_decode(file_get_contents($base . '?api_key=' . $apikey),true);
+      $cast = json_decode(file_get_contents($base . '/credits?api_key=' . $apikey),true);
+      $trailer = json_decode(file_get_contents($base . '/videos?api_key=' . $apikey),true)['results'];
+      $similar = json_decode(file_get_contents($base . '/similar?api_key=' . $apikey ),true)['results'];
       if (count($trailer) > 0) {
         $trailer = $trailer[0];
       } else {
         $trailer = null;
       };
       $genre = $info["genres"];
-      return view('movie', compact('info', 'cast', 'genre', 'trailer'));
+      return view('movie', compact('info', 'cast', 'genre', 'trailer', 'similar'));
     }
     public function genre(Request $request)
     {

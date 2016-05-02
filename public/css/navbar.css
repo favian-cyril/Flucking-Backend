@@ -1,0 +1,38 @@
+body {
+	padding-top: 5%;
+	padding-bottom: 2%;
+	background: url('../img/background-3.png') no-repeat center center fixed; \
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'pixelar';
+    src: url("fonts/pixelar.ttf");
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 10px;
+    text-align: center;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+.navbar-brand img{
+	width: 40px;
+	height: 40px;
+}
+.navbar-default{
+	border-color:black;
+	background: black;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.navbar-button{
+	width: 20px;
+	height: 20px;
+}

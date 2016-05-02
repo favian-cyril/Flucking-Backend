@@ -6,46 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="public/css/simplePagination.css"/>
-    <title>Select Genre</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="public/js/jquery.simplePagination.js"></script>
-    <style type="text/css">
-		.navbar-brand {
-		    position: absolute;
-		    width: 100%;
-		    left: 50%;
-		    bottom: 10px;
-		    text-align: center;
-		    margin-left: -50px !important;  /* 50% of your logo width */
-		    display: block;
-		}
-		.navbar-toggle {
-		    z-index:3;
-		}
-		body {
-			background: url("public/img/background-3.png");
-			padding-top: 4%;
-
-		.padding{
-			margin: 10px 10px 10px 10px;
-		}
-		.row-margin {
-			margin-top:40px;
-			margin-bottom: 40px;
-		}
-		@font-face {
-		    font-family: 'pixelar';
-		    src: url("public/fonts/pixelar.ttf");
-		}
-		p{
-			display: inline;
-			font-family: 'pixelar';
-		}
-    </style>
+    <link href="public/css/navbar.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" style="background: grey;">

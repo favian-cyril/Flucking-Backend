@@ -2,65 +2,44 @@
 
 @section('content')
 <style type="text/css">
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    bottom: 10px;
-    text-align: center;
-    margin-left: -50px !important;  /* 50% of your logo width */
-    display: block;
-}
-.navbar-toggle {
-    z-index:3;
-}
-.navbar-button{
-  width: 20px;
-  height: 20px;
-}
-body {
-  background: url("public/img/background-3.png");
-  padding-top: 4%;
-}
-.padding{
-  padding: 10px 10px 10px 10px;
-}
-
-.margin{
-  margin: 10px 10px 10px 10px;
-}
-@font-face {
-    font-family: 'pixelar';
-    src: url("fonts/pixelar.ttf");
-}
-p{
-  display: inline;
-  font-family: 'pixelar';
-}
-.container {
-    /* remember to set a width */
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.container-white{
-  background: rgba(255, 255, 255, .6);
-  border: solid 4px;
-  border-radius: 10px;
-  padding: 0px 30px 15px 30px;
-}
-.container-box{
-  background: rgba(255,255,255, .8);
-  border: solid 4px;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-}
-.poster{
-  width: 150px;
-  height: 240px;
-  text-align: center;
-}
-</style>
+		.padding{
+			padding: 10px 10px 10px 10px;
+		}
+		.margin{
+			margin: 10px 10px 10px 10px;
+		}
+		.row-margin {
+			margin-top:10px;
+			margin-bottom: 20px;
+		}
+		p{
+			display: inline;
+			font-family: 'pixelar';
+		}
+		.container {
+		    /* remember to set a width */
+		    width: 70%;
+		    margin-right: auto;
+		    margin-left: auto;
+		}
+		.container-white{
+			background: rgba(255, 255, 255, .6);
+			border: solid 4px;
+			border-radius: 10px;
+			padding: 0px 30px 15px 30px;
+		}
+		.container-box{
+			background: rgba(255,255,255, .8);
+			border: solid 4px;
+			border-radius: 10px;
+			padding: 10px 10px 10px 10px;
+		}
+		.poster{
+			width: 150px;
+			height: 240px;
+			text-align: center;
+		}
+    </style>
 	<div class="container" style="background: rgba(255, 255, 255, .6); border: solid 4px; border-radius: 10px;">
 		<div class="row row-margin">
 				<div class="col-md-12">
@@ -138,6 +117,29 @@ p{
 			<div class = "col-md-8 col-md-offset-2">
 			</div>
 		</div>
+    <div class="row">
+            <div class="col-md-8 col-md-offset-4">
+                <h3 class="page-header">You may also like...</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+	        <div class="col-md-8 col-md-offset-4">
+              @for ($i=0; $i < 3; $i++)
+	            <div class="col-sm-4 portfolio-item">
+	                <a href="/movie?id={{$similar[$i]['id']}}">
+	                    <img class="img-responsive center-block poster" src="http://image.tmdb.org/t/p/w500{{ $similar[$i]['poster_path'] }}" alt="Movie Poster">
+	                </a>
+	                <h6>
+	                    <a href="#"><h5 class="text-center">{{$similar[$i]['title']}}</h5></a>
+	                </h6>
+	            </div>
+              @endfor
+          </div>
+
+        </div>
 	</div>
 
 @endsection
