@@ -87,11 +87,14 @@
 		<div class="row row-margin">
 			  	<div class="col-md-4" >
 			  		<div class="col-md-12" style="background: rgba(255,255,255, .8); border: solid 4px; border-radius: 10px; padding: 10px 10px 10px 10px;">
+              <p>Director:</p>
+              <ul>
               @foreach ($cast['crew'] as $c)
                 @if ($c['job'] == 'Director')
-                <p>Director: {{$c['name']}}</p>
+                <li><p>{{$c['name']}}</p></li>
                 @endif
               @endforeach
+              </ul>
               <br>
               <p>Stars:</p>
               <ul>
