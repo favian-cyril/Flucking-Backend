@@ -33,7 +33,7 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="#"><img src="{{url('public/img/house_logo.png')}}" style = "width:20px; height:20px; "></a></li>
+	        <li><a href="/"><img src="{{url('public/img/house_logo.png')}}" style = "width:20px; height:20px; "></a></li>
 	        <li><a href="#"><img src="{{url('public/img/movie_roll.png')}}" style = "width:20px; height:20px; "></a></li>
 	        <li><a href="#"><img src="{{url('public/img/friends_logo.png')}}" style = "width:20px; height:20px; "></a></li>
 	      </ul>

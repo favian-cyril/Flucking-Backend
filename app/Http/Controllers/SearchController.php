@@ -44,7 +44,7 @@ class SearchController extends Controller
       $cur = $request->input('p');
       $id = $request->input('g');
       $type = 'genre';
-      $req = json_decode(file_get_contents('http://api.themoviedb.org/3/genre/' . $id . '/movies?api_key=' . $apikey . '&page=' . $cur), true);
+      $req = json_decode(file_get_contents('https://api.themoviedb.org/3/discover/movie' . '?api_key=' . $apikey . '&with_genres=' . $id . '&page=' . $cur), true);
       return view('search', compact('req', 'cur', 'id', 'type'));
     }
 }

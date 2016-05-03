@@ -93,7 +93,7 @@
         </div>
         <div class= "row">
           <div class = "col-md-4">
-            <a href="/genre?g=18&p=1"><img src = "public/img/lover.png" class= "img-responsive img-genre center-block no-resize" alt= "touchy-feely"></a>
+            <a href="/genre?g=18,10749&p=1"><img src = "public/img/lover.png" class= "img-responsive img-genre center-block no-resize" alt= "touchy-feely"></a>
             <p> Touchy Feely </p>
           </div>
           <div class = "col-md-4">
