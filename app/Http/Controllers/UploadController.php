@@ -24,10 +24,10 @@ class UploadController extends Controller
            DB::table('users')->where('id', $user->id)->update(['profilepict' => 'public/asset/' . $filename]);
            Request::file('fileToUpload')->move(public_path().'/asset', $filename);
            Session::flash('status', 'Upload successfully');
-           return back();
+           return Redirect::to('upload');
          } else {
-           Session::flash('status', 'Uploaded file is not valid');
-           return back();
+           Session::flash('status', 'uploaded file is not valid');
+           return Redirect::to('upload');
          }
       }
     }//
